@@ -5,8 +5,6 @@ import CardGridSection from './.stackbit/models/CardGridSection';
 import FooterConfig from './.stackbit/models/FooterConfig';
 import HeroSection from './.stackbit/models/HeroSection';
 import SiteConfig from './.stackbit/models/SiteConfig';
-import { defineStackbitConfig } from '@stackbit/types'
-import { GitContentSource } from '@stackbit/cms-git'
 
 const sbConfig = {
   stackbitVersion: '~0.5.0',
@@ -33,13 +31,4 @@ const sbConfig = {
   },
 };
 
-export default sbConfig({
-  stackbitVersion: '~0.6.0',
-  contentSources: [
-    new GitContentSource({
-      rootPath: __dirname,
-      contentDirs: ['content'],
-      models: [],
-    }),
-  ],
-})
+export default sbConfig;
