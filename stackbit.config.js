@@ -33,7 +33,7 @@ const sbConfig = {
   },
 };
 
-export default defineStackbitConfig({
+export default sbConfig({
   stackbitVersion: '~0.6.0',
   contentSources: [
     new GitContentSource({
